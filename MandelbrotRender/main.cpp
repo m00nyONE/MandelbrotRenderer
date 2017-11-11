@@ -10,9 +10,8 @@ long double MAX = 2.0;
 int MAX_ITERATIONS = 200;
 long double factor = 1;
 
-bool zoom = true;
+bool zoom = true; //turn to false to just render the Mandelbrot from -2 to 2
 
-//mapping function -- see Arduino.cc/en/Reference/Map -- i am using it to center the coordinates
 long double map(long double value, long double in_min, long double in_max, long double out_min, long double out_max)
 {
 	return ( value - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min ;
